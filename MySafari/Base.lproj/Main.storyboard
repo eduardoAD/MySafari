@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="tnD-KP-sfu"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="awY-kf-Ufm"/>
                                 </connections>
                             </webView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDc-nt-SFN">
@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="width" constant="300" id="QbX-11-liB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="QbX-11-liB"/>
@@ -40,6 +40,9 @@
                                         <include reference="QbX-11-liB"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="FhF-nK-BhJ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
