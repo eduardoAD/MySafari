@@ -51,4 +51,10 @@
     }
 }
 
+- (IBAction)onForwardButtonPressed:(UIButton *)sender {
+    if ([self.webView canGoForward]) {
+        [self.webView goForward];
+    }
+}
+
 @end
