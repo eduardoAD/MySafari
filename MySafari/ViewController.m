@@ -32,9 +32,17 @@
         NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
         [self.webView loadRequest:urlRequest];
         [textField resignFirstResponder];
-        
+
         return YES;
     }
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 @end
