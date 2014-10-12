@@ -45,4 +45,10 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
+- (IBAction)onBackButtonPressed:(UIButton *)sender {
+    if ([self.webView canGoBack]) {
+        [self.webView goBack];
+    }
+}
+
 @end
