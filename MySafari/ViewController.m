@@ -48,6 +48,7 @@
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self updateButtons];
+    self.urlTextField.text = webView.request.URL.absoluteString;
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView {
@@ -96,5 +97,8 @@
     [alertView show];
 }
 
+- (IBAction)onClearButtonPressed:(UIButton *)sender {
+    self.urlTextField.text = @"";
+}
 
 @end
