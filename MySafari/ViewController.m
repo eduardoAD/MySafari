@@ -32,7 +32,11 @@
     if ([self.urlTextField.text isEqual:@""]) {
         return NO;
     } else {
-        NSURL *url = [[NSURL alloc] initWithString:self.urlTextField.text];
+        NSString *urlText = self.urlTextField.text;
+        if (![urlText containsString:@"http://"]) {
+            urlText = [NSString stringWithFormat:@"http://%@",urlText];
+        }
+        NSURL *url = [[NSURL alloc] initWithString:urlText];
         NSURLRequest *urlRequest = [[NSURLRequest alloc] initWithURL:url];
         [self.webView loadRequest:urlRequest];
         [textField resignFirstResponder];
