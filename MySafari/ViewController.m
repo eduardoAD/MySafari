@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <UIWebViewDelegate, UITextFieldDelegate>
+@interface ViewController () <UIWebViewDelegate, UITextFieldDelegate, UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) IBOutlet UITextField *urlTextField;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
@@ -87,5 +87,14 @@
     self.backButton.enabled = self.webView.canGoBack;
     self.stopButton.enabled = self.webView.loading;
 }
+
+- (IBAction)onPlusButtonPressed:(UIButton *)sender {
+    UIAlertView *alertView = [[UIAlertView alloc] init];
+    alertView.delegate = self;
+    alertView.title = @"Coming soon!";
+    [alertView addButtonWithTitle:@"Ok"];
+    [alertView show];
+}
+
 
 @end
