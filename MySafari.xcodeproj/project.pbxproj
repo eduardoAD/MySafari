@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E46215211A65C8F000E4F188 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46215201A65C8F000E4F188 /* Media.xcassets */; };
 		E4F60C1B19EB1F9600CEA436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F60C1A19EB1F9600CEA436 /* main.m */; };
 		E4F60C1E19EB1F9600CEA436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F60C1D19EB1F9600CEA436 /* AppDelegate.m */; };
 		E4F60C2119EB1F9600CEA436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F60C2019EB1F9600CEA436 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E46215201A65C8F000E4F188 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		E4F60C1519EB1F9600CEA436 /* MySafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F60C1919EB1F9600CEA436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F60C1A19EB1F9600CEA436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				E4F60C2019EB1F9600CEA436 /* ViewController.m */,
 				E4F60C2219EB1F9600CEA436 /* Main.storyboard */,
 				E4F60C2519EB1F9600CEA436 /* Images.xcassets */,
+				E46215201A65C8F000E4F188 /* Media.xcassets */,
 				E4F60C2719EB1F9600CEA436 /* LaunchScreen.xib */,
 				E4F60C1819EB1F9600CEA436 /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 			files = (
 				E4F60C2419EB1F9600CEA436 /* Main.storyboard in Resources */,
 				E4F60C2919EB1F9600CEA436 /* LaunchScreen.xib in Resources */,
+				E46215211A65C8F000E4F188 /* Media.xcassets in Resources */,
 				E4F60C2619EB1F9600CEA436 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySafari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -356,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MySafari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
