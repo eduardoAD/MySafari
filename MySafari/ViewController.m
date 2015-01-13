@@ -3,7 +3,7 @@
 //  MySafari
 //
 //  Created by Eduardo Alvarado Díaz on 10/12/14.
-//  Copyright (c) 2014 Globant. All rights reserved.
+//  Copyright (c) 2014 Company. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -77,7 +77,7 @@
     [self updateButtons];
 
     // report the error inside the webview
-    NSString* errorString = [NSString stringWithFormat:@"<html><head><title>Error %li</title></head><body><center><font size=+1 color='red'><br><br><br>An error occurred:<br>%@</font></center></body></html>",error.code,error.localizedDescription];
+    NSString* errorString = [NSString stringWithFormat:@"<html><head><title>Error %li</title></head><body><center><font size=+1 color='red'><br><br><br>An error occurred:<br>%@</font></center></body></html>",(long)error.code,error.localizedDescription];
     [self.webView loadHTMLString:errorString baseURL:nil];
     self.urlTextField.text = self.requestTXT;
 }
